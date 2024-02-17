@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-netflix-3521600-2945044.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&family=Protest+Guerrilla&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+  box-sizing: border-box;
+  /* border and padding will be adjusted */
+  margin:0%;  
+}
+        body {
+            background-image: url("https://repository-images.githubusercontent.com/299409710/b42f7780-0fe1-11eb-8460-e459acd20fb4");
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+
+        }
+
+        .main {
+
+            display: flex;
+            align-content: center;
+            justify-content: center;
+
+        }
+
+    
+        #netflix {
+            color: Red;
+            font-family: 'Bebas Neue', sans-serif;
+            padding-left: 10%;
+            font-size: 40px;
+
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        #center {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            border: solid gray;
+            width: 90%;
+            height: 90%;
+            padding: 2%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 4%;
+            color: white;
+        }
+
+        ::placeholder {
+            color: darkgray;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: red;
+            width: 90%;
+            color: white;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 5px 3px red;
+        }
+
+        .left {
+            float: right;
+            padding-right: 10%;
+            padding-top: 3%;
+        }
+
+        #signin {
+            background-color: red;
+            width: 90px;
+            padding: 3%;
+            border: none;
+            border-radius: 4%;
+
+        }
+
+        #signin:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 5px 3px red;
+        }
+
+        select {
+            width: 100px;
+            padding: 4%;
+            border: solid gray;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .head {
+            position: absolute;
+            top: 35%;
+            left: 20%;
+        }
+
+        #link {
+            text-decoration: none;
+            color: white;
+        }
+    /*extra small devices*/
+    @media screen and (max-width: 576px) {
+        .seccc{
+        display:flex ;
+        flex-direction: column;
+      }
+      .left {
+            padding-left: 90%;
+            padding-right: 10%;
+            padding-top: 3%;
+        }
+      
+    }
+
+    /*small devices*/
+    @media screen and (min-width:577px) and (max-width:768px) {
+      .seccc{
+        display:flex ;
+        flex-direction: column;
+      }
+      .left {
+            padding-left: 90%;
+            padding-right: 10%;
+            padding-top: 3%;
+        }
+    }
+    /*large devices - Tab*/
+    @media all and (min-width:769px) and (max-width:992px) {
+        .seccc{
+        display:flex ;
+        flex-direction: column;
+      }
+      .left {
+            padding-left: 90%;
+            padding-right: 10%;
+            padding-top: 3%;
+        }
+    }
+
+    /*extra large devices - Laptop*/
+    @media all and (min-width:993px) and (max-width:1200px) {
+        .seccc{
+        display:flex ;
+        flex-direction: column;
+      }
+      .left {
+            padding-left: 90%;
+            padding-right: 10%;
+            padding-top: 3%;
+        }
+    }
+
+        /* #hr1 {
+            border: 3px solid gray;
+            width: 100%;
+            position: absolute;
+            top: 96%;
+        }
+
+        #sec1 {
+            position: absolute;
+            top: 98%;
+            width: 105%;
+            padding: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #hr2 {
+            border: 3px solid gray;
+            width: 105%;
+            position: absolute;
+            top: 160%;
+        }
+
+        #sec2 {
+            position: absolute;
+            top: 162%;
+            width: 105%;
+            padding: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #hr3 {
+            border: 3px solid gray;
+            width: 100%;
+            position: absolute;
+            top: 230%;
+        }
+
+        #sec3 {
+            position: absolute;
+            top: 232%;
+            width: 105%;
+            padding: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #hr4 {
+            border: 3px solid gray;
+            width: 100%;
+            position: absolute;
+            top: 300%;
+        }
+
+        #sec4 {
+            position: absolute;
+            top: 302%;
+            width: 105%;
+            padding: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        } */
+    </style>
+</head>
+
+<body>
+    <section class="seccc">
+        <h1 id="netflix">NETFLIX</h1>
+
+    <div class="left">
+        <select name="lang" id="lang">
+
+            <option>English</option>
+            <option>Hindi</option>
+        </select>
+        &nbsp;&nbsp;
+        <button type="submit" id="signin"><a href="./index.html" id="link">Sign In </a></button>
+    </div>
+
+    <div class="head">
+        <h1>Unlimited movies, TV shows and more</h1>
+        <p id="center">Watch anywhere. Cancel anytime.</p><br />
+        <p id="center">Ready to watch? Enter your email to create or restart your membership.</p><br />
+        <form class="gett">
+            <div>
+                <input type="text" placeholder="Email address" />
+            &nbsp;
+            &nbsp;<!--Empty space-->
+            </div>
+            <div>
+                <button type="submit">Get Started > </button>
+            </div>
+        </form>
+    </div>
+    </section>
+    <!-- <hr id="hr1" />
+    <section style="background-color: black;" id="sec1">
+        <div>
+            <h1>Enjoy on your TV.</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+
+        <img src="./Images/feature-1.png" style="height:30%;width:40%;" />
+    </section>
+    <hr id="hr2" />
+    <section style="background-color: black;" id="sec2">
+        <img src="./Images/feature-2.png " style="height:30%;width:40%;" />
+        <div>
+            <h1>Download your shows to watch offline.</h1>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+    </section>
+    <hr id="hr3" />
+    <section style="background-color: black;" id="sec3">
+        <div>
+            <h1>Watch everywhere.</h1>
+            <p>Stream unlimited movies and TV Shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <img src="./Images/feature-3.png " style="height:30%;width:40%;" />
+    </section>
+    <hr id="hr4" />
+    <section style="background-color: black;" id="sec4">
+        <img src="./Images/feature-4.png " style="height:30%;width:40%;" />
+        <div>
+            <h1>Create Profiles for children.</h1>
+            <p>Send children on adventure with their favourite characters<br> in a space made just for them -- free with
+                your membership.</p>
+        </div>
+    </section> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
